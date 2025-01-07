@@ -1,0 +1,165 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --color-bg: #F5F4F0;
+  --color-text-primary: #1B1B1B;
+  --color-text-secundary: #333333;
+  --color-text-tertiary: #696969;
+  --color-text-headline: #E1624F;
+  --color-text-accent: #0C51A7;
+
+  /* typography */
+  --font-main: "Open Sans", sans-serif;
+  --font-size-base: 1.6rem;
+  --font-size-md: 2.8rem;
+  --font-size-lg: 3.2rem;
+  --font-size-xl: 3.6rem;
+  
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font Style */
+  --font-style-italic: italic;
+
+  /* Spacing */
+  --spacing-xm: 0.8rem;
+  --spacing-base: 4rem;
+  --spacing-md: 4.8rem;
+  --spacing-lg: 6.4rem;
+  --spacing-xl: 8.8rem;
+
+  /* Radius */
+  --radius-base: 2.8rem;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secundary);
+}
+
+#page {
+  margin: var(--spacing-xl) auto 0 auto;
+  width: 1120px;
+}
+
+header {
+  margin-bottom: var(--spacing-base);
+}
+
+#headline {
+  color: var(--color-text-headline);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+}
+
+h1, h2, h3 {
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: var(--font-size-xl);
+}
+
+figure {
+  margin-bottom: var(--spacing-base);
+}
+
+img {
+  width: 100%;
+  border-radius: var(--radius-base);
+}
+
+figure img {
+  height: 660px;
+}
+
+figcaption {
+  text-align: center;
+  font-style: var(--font-style-italic);
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: var(--spacing-base) 0;
+  background-color: #d9d9d9;
+}
+
+article {
+  padding: 2.4rem 0 var(--spacing-base) 0;
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-xm);
+}
+
+h2 + p {
+  margin-bottom: var(--spacing-lg);
+}
+
+article img {
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+section + section {
+  margin-bottom: var(--spacing-md);
+}
+
+h3 {
+  font-size: var(--font-size-md);
+  margin-bottom: 0.4rem;
+}
+
+ul {
+  margin-left: 2.4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+ul li::marker {
+  color: #333333;
+}
+
+li:nth-child(1) {
+  color: var(--color-text-accent);
+}
+
+li:nth-child(2) {
+  color: #E5245E;
+}
+
+li:nth-child(3) {
+  color: #E95E10;
+}
+
+.third-list li:first-child {
+  color: #591B98;
+}
+
+#author-comments p {
+  text-align: center;
+  font-style: var(--font-style-italic);
+}
+
+footer {
+  text-align: center;
+  margin: 25px 0 var(--spacing-lg) 0;
+}
+
+footer img {
+  width: 16px;
+  vertical-align: middle;
+}
