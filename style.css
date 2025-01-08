@@ -33,6 +33,7 @@ html {
 
   /* Spacing */
   --spacing-xm: 0.8rem;
+  --spacing-sm: 2.4rem;
   --spacing-base: 4rem;
   --spacing-md: 4.8rem;
   --spacing-lg: 6.4rem;
@@ -50,14 +51,15 @@ body {
 
 #page {
   margin: var(--spacing-xl) auto 0 auto;
-  width: 1120px;
+  padding: 0 1rem; /* Padding pensando em responsividade */
+  max-width: 1140px; /* Adicionado mais 20px por conta do padding*/
 }
 
 header {
   margin-bottom: var(--spacing-base);
 }
 
-#headline {
+span {
   color: var(--color-text-headline);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
@@ -80,8 +82,9 @@ img {
   border-radius: var(--radius-base);
 }
 
-figure img {
-  height: 660px;
+#hero img {
+  max-height: 660px;
+  margin-bottom: var(--spacing-sm);
 }
 
 figcaption {
@@ -96,8 +99,8 @@ figcaption {
   background-color: #d9d9d9;
 }
 
-article {
-  padding: 2.4rem 0 var(--spacing-base) 0;
+#desciption {
+  padding-top: var(--spacing-sm)
 }
 
 h2 {
@@ -109,14 +112,19 @@ h2 + p {
   margin-bottom: var(--spacing-lg);
 }
 
-article img {
-  height: 350px;
+.content img {
+  min-height: 300px;
+  max-height: 350px;
   object-fit: cover;
   margin-bottom: 2rem;
 }
 
-section + section {
+article + article {
   margin-bottom: var(--spacing-md);
+}
+
+.last-content {
+  margin-bottom: 0;
 }
 
 h3 {
@@ -125,7 +133,7 @@ h3 {
 }
 
 ul {
-  margin-left: 2.4rem;
+  margin-left: var(--spacing-sm);
   font-weight: var(--font-weight-bold);
 }
 
@@ -156,7 +164,7 @@ li:nth-child(3) {
 
 footer {
   text-align: center;
-  margin: 25px 0 var(--spacing-lg) 0;
+  margin: 6.5rem 0 var(--spacing-lg) 0;
 }
 
 footer img {
